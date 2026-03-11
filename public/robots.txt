@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /api
+Disallow: /*.json$
+Disallow: /storage/
+Disallow: /bootstrap/
+
+Sitemap: https://sensiair.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

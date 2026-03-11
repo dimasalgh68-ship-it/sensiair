@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#2563eb" rx="20"/>
+  
+  <!-- Water droplet -->
+  <path d="M50 20 C50 20, 35 40, 35 50 C35 62.7, 41.7 73, 50 73 C58.3 73, 65 62.7, 65 50 C65 40, 50 20, 50 20 Z" fill="#ffffff"/>
+  
+  <!-- Inner circle for depth -->
+  <circle cx="50" cy="50" r="12" fill="#2563eb" opacity="0.3"/>
+</svg>
