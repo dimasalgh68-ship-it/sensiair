@@ -1,0 +1,21 @@
+name: Deploy sensiair
+
+on:
+  push:
+    branches: main   # Ganti dengan branch yang akan di-deploy
+
+jobs:
+  web-deploy:
+    name: Deploy to server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync files via FTP
+        uses: D/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}        # IP atau domain server FTP
+          username: ${{ secrets.FTP_USERNAME }}    # Username FTP
+          password: ${{ secrets.FTP_PASSWORD }}    # Password FTP (simpan di secrets)
+          server-dir: ./   # (opsional) folder tujuan di server, biasanya root dari FTP user
